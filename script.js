@@ -25,10 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let filteredStudents = students.filter((student) =>
       student.toLowerCase().includes(filterText)
     )
-    if (sortOrder === 'asc') {
-      filteredStudents.sort()
-    } else {
-      filteredStudents.sort().reverse()
+
+    // Ordeno ascendentemente
+    filteredStudents.sort((a, b) => {
+      return a.localeCompare(b, 'es', { sensitivity: 'base' })
+    })
+
+    // Ordeno descendentemente
+    if (sortOrder !== 'asc') {
+      filteredStudents.reverse()
     }
 
     studentList.innerHTML = ''
