@@ -1,0 +1,51 @@
+body {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+form,
+input,
+button,
+select,
+ul {
+  margin: 10px;
+}
+
+input, select {
+  border: solid 0.1rem #808080;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+button {
+  cursor: pointer;
+  border: solid .125rem #1b1b1b;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+
+button.delete {
+  background-color: #d82d2d;
+  color: white;
+}
+
+button.add {
+  background-color: #148514;
+  color: white;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Estudiantes | Valentina Hernández | JaP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Gestión de Estudiantes</h1>
+
+  <form id="student-form">
+    <input type="text" id="student-name" placeholder="Nombre del estudiante" required>
+    <button type="submit" class="add">Agregar Estudiante</button>
+  </form>
+
+  <input type="text" id="filter" placeholder="Filtrar nombres...">
+
+  <select id="sort">
+    <option value="asc">Ordenar Ascendente</option>
+    <option value="desc">Ordenar Descendente</option>
+  </select>
+
+  <ul id="student-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
